@@ -1,14 +1,85 @@
 html {
     scroll-behavior: smooth;
+    width: 100%;
     scroll-padding-top: 10vh;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
     padding: 0;
+    width: 100%;
     margin: 0;
+    z-index: -1;
     background: rgb(0, 0, 0);
     background: radial-gradient(circle, rgba(0, 0, 0, 1) 35%, rgba(7, 46, 54, 1) 100%);
+}
+
+.loadingScreen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    z-index: 10;
+    position: absolute;
+}
+
+.loadingScreen {
+    transition: opacity 1s ease; /* Adjusts the duration and easing */
+    opacity: 1; /* Fully visible by default */
+}
+
+.loadingScreen.hidden {
+    opacity: 0; /* Fully transparent when hidden */
+    pointer-events: none; /* Prevent interactions when hidden */
+}
+
+.spinner-square {
+    display: flex;
+    flex-direction: row;
+    width: 90px;
+    height: 120px;
+}
+
+.spinner-square > .square {
+    width: 17px;
+    height: 80px;
+    margin: auto auto;
+    border-radius: 4px;
+}
+
+.square-1 {
+    animation: square-anim 1200ms cubic-bezier(0.445, 0.05, 0.55, 0.95) 0s infinite;
+}
+
+.square-2 {
+    animation: square-anim 1200ms cubic-bezier(0.445, 0.05, 0.55, 0.95) 200ms infinite;
+}
+
+.square-3 {
+    animation: square-anim 1200ms cubic-bezier(0.445, 0.05, 0.55, 0.95) 400ms infinite;
+}
+
+@keyframes square-anim {
+    0% {
+        height: 80px;
+        background-color: rgb(111, 163, 240);
+    }
+    20% {
+        height: 80px;
+    }
+    40% {
+        height: 120px;
+        background-color: rgb(111, 200, 240);
+    }
+    80% {
+        height: 80px;
+    }
+    100% {
+        height: 80px;
+        background-color: rgb(111, 163, 240);
+    }
 }
 
 .landing-page {

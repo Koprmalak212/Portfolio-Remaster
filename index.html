@@ -7,7 +7,14 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div id="home"></div>
+<div class="loadingScreen">
+    <div class="spinner-square">
+        <div class="square-1 square"></div>
+        <div class="square-2 square"></div>
+        <div class="square-3 square"></div>
+    </div>
+</div>
+
 <nav>
     <a href="index.html">Home</a>
     <a href="aboutme.html">about Me</a>
@@ -41,6 +48,16 @@
         </div>
     </div>
 </header>
+
+<script>
+    var loadingScreen = document.querySelector(".loadingScreen");
+
+    window.addEventListener('load', function() {
+        setTimeout(function() {
+            loadingScreen.classList.add('hidden');
+        }, 1000); // 1000 = 1s
+    });
+</script>
 
 </body>
 </html>
