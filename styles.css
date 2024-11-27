@@ -5,7 +5,7 @@ html {
 }
 
 .light-mode{
-    background-color: #ffffff;
+    background: radial-gradient(circle, rgba(67,223,208,1) 0%, rgba(255,255,255,1) 75%);
     color: black;
 }
 
@@ -14,8 +14,8 @@ html {
 }
 
 .dark-mode{
-    background: black;
-    background-color: black;
+    background: radial-gradient(circle, rgba(24,84,78,1) 0%, rgba(0,0,0,1) 100%);
+
 }
 
 body {
@@ -67,6 +67,10 @@ nav a {
 nav a:hover {
     color: #21aec8;
     box-shadow: 3px 3px 5px black;
+}
+
+nav a img{
+    width: 50px;
 }
 
 .rotate270 {
