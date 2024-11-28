@@ -14,7 +14,8 @@
     <a href="info.html">Info</a>
     <a href="projecten.html">Projecten</a>
     <a href="contact.html">Contact</a>
-    <a href="#" onclick="darkMode()" > <img src="images/dark-mode.png"> </a>
+    <a href="#" onclick="darkMode()"> <img src="images/dark-mode.png"
+                                           alt="image with moon and sun symbol for the dark mode function"> </a>
     <script src="darkmode.js"></script>
 </nav>
 
@@ -44,8 +45,26 @@
     </div>
 </header>
 
+<div class="cookie-popup" id="cookie-popup">
+    <div class="popup-content">
+        <h1>Cookies</h1>
+        <p>Accept Cookies?</p>
+        <button onclick="acceptCookies()">Accept</button>
+        <button onclick="declineCookies()">Decline</button>
+    </div>
+</div>
 
 <script>
+    function acceptCookies() {
+        document.getElementById("cookie-popup").style.display = "none";
+        console.log("Cookies accepted");
+    }
+
+    function declineCookies() {
+        document.getElementById("cookie-popup").style.display = "none";
+        console.log("Cookies declined");
+    }
+
     // How to make a cup of tea:
     //
     // First take the kettle and plug it into a compatible socket.

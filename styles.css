@@ -4,17 +4,17 @@ html {
     scroll-padding-top: 10vh;
 }
 
-.light-mode{
-    background: radial-gradient(circle, rgba(67,223,208,1) 0%, rgba(255,255,255,1) 75%);
+.light-mode {
+    background: radial-gradient(circle, rgba(67, 223, 208, 1) 30%, rgba(255, 255, 255, 1) 75%);
     color: black;
 }
 
-.light-mode div{
+.light-mode div {
     color: #000000;
 }
 
-.dark-mode{
-    background: radial-gradient(circle, rgba(24,84,78,1) 0%, rgba(0,0,0,1) 100%);
+.dark-mode {
+    background: radial-gradient(circle, rgba(24, 84, 78, 1) 0%, rgba(0, 0, 0, 1) 100%);
 
 }
 
@@ -69,8 +69,12 @@ nav a:hover {
     box-shadow: 3px 3px 5px black;
 }
 
-nav a img{
+nav a img {
     width: 50px;
+}
+
+nav a img:hover {
+    cursor: pointer;
 }
 
 .rotate270 {
@@ -242,7 +246,7 @@ nav a img{
     box-shadow: 3px 3px 5px black;
 }
 
-.project{
+.project {
     border: 5px solid black;
     border-radius: 25px;
     font-size: 25px;
@@ -256,7 +260,7 @@ nav a img{
     flex-direction: column;
 }
 
-.project p{
+.project p {
     margin: 10px;
     padding: 0;
 }
@@ -265,7 +269,7 @@ nav a img{
     font-size: 1rem;
 }
 
-.projectcontainer{
+.projectcontainer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -273,23 +277,61 @@ nav a img{
     margin: 12vh;
 }
 
-.contactpage{
+.contactpage {
     padding: 10px;
     display: flex;
     flex-direction: column;
 }
 
-.contactpage h1{
+.contactpage h1 {
     font-size: 1.2rem;
     padding: 10px;
 }
 
-.contactpage img{
+.contactpage img {
     width: 3vw;
 }
 
-.contactpage a{
+.contactpage a {
     text-decoration: none;
     color: #000000;
     font-size: 3rem;
+}
+
+.cookie-popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    position: fixed;
+    z-index: 2;
+    padding: 10px;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(10px);
+}
+
+.popup-content{
+    padding: 20px;
+    width: 30vw;
+    height: 30vh;
+    border: 3px solid black;
+    border-radius: 30px;
+    background: radial-gradient(circle, rgba(67,223,208,1) 30%, rgba(255,255,255,1) 75%);
+}
+
+.popup-content button {
+    width: 27vw;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 20px;
+    color: white;
+    border-radius: 15px;
+    border: 2px solid black;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background: radial-gradient(circle, rgba(0,0,0,1) 30%, rgba(67,223,208,1) 75%);
 }
