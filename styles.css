@@ -29,6 +29,23 @@ html {
 
 }
 
+#clock{
+    padding: 10px;
+    font-family: "Comic Sans MS", cursive;
+    font-size: 20px;
+}
+
+.light-mode #clock{
+    color: white;
+    text-shadow: 5px 5px 5px #000000;
+}
+
+.light-mode #clockgreet{
+    color: #FFFFFF;
+    text-shadow: 5px 5px 5px #000000;
+    font-size: 20px;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     padding: 0;
@@ -55,7 +72,6 @@ header div {
     align-items: center;
 }
 
-
 nav {
     position: fixed;
     width: 100%;
@@ -80,11 +96,13 @@ nav a:hover {
 }
 
 nav a img {
-    width: 50px;
+    width: 55px;
 }
 
 nav a img:hover {
     cursor: pointer;
+    border: 3px solid #21aec8;
+    border-radius: 30px;
 }
 
 .rotate270 {
@@ -346,3 +364,4 @@ nav a img:hover {
     cursor: pointer;
     background: radial-gradient(circle, rgba(0,0,0,1) 30%, rgba(67,223,208,1) 75%);
 }
+

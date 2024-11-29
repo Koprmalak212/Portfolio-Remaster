@@ -9,14 +9,17 @@
 <body class="light-mode">
 
 <nav>
-    <a href="index.html">Home</a>
-    <a href="aboutme.html">about Me</a>
-    <a href="info.html">Info</a>
-    <a href="projecten.html">Projecten</a>
-    <a href="contact.html">Contact</a>
-    <a href="#" id="darkMode"> <img id="darkModeImage" src="images/dark-mode.png"
-                                           alt="image with moon and sun symbol for the dark mode function"> </a>
+    <div><h1 id="clock">00:00</h1></div>
+    <div><h1 id="clockgreet">Goedemorgen!</h1></div>
+    <a href="index.php">Home</a>
+    <a href="aboutme.php">about Me</a>
+    <a href="info.php">Info</a>
+    <a href="projecten.php">Projecten</a>
+    <a href="contact.php">Contact</a>
+    <a href="#" id="darkMode"> <img id="darkModeImage" src="images/dark-mode.png" alt="#"></a>
+
     <script src="darkmode.js"></script>
+    <script src="clock.js"></script>
 </nav>
 
 <header>
