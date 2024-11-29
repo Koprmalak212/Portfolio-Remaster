@@ -14,7 +14,18 @@ html {
 }
 
 .dark-mode {
-    background: radial-gradient(circle, rgba(24, 84, 78, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    background: radial-gradient(circle, rgba(0,75,68,1) 20%, rgba(0,0,0,1) 65%);
+}
+
+.dark-mode div {
+    color: white;
+}
+
+#darkMode a{
+
+}
+
+#darkMode a img{
 
 }
 
@@ -51,9 +62,8 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgb(42, 42, 42);
+    background: rgb(41, 40, 40);
     height: 10vh;
-    border: 1px solid black;
 }
 
 nav a {
@@ -66,7 +76,7 @@ nav a {
 
 nav a:hover {
     color: #21aec8;
-    box-shadow: 3px 3px 5px black;
+    font-weight: bold;
 }
 
 nav a img {
@@ -333,5 +343,6 @@ nav a img:hover {
     border: 2px solid black;
     font-size: 1.2rem;
     font-weight: bold;
+    cursor: pointer;
     background: radial-gradient(circle, rgba(0,0,0,1) 30%, rgba(67,223,208,1) 75%);
 }
