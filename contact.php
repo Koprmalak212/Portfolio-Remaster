@@ -7,15 +7,8 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class = "light-mode">
-<nav>
-    <a href="index.html">Home</a>
-    <a href="aboutme.html">about Me</a>
-    <a href="info.html">Info</a>
-    <a href="projecten.html">Projecten</a>
-    <a href="contact.html">Contact</a>
-    <a href="#" onclick="darkMode()" > <img src="images/dark-mode.png"> </a>
-    <script src="darkmode.js"></script>
-</nav>
+
+<?php include 'assets/navbar.html'?>
 
 <section id="contact" class="contact">
     <div class="textcontainer">

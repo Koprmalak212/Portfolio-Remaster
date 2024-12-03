@@ -8,84 +8,11 @@
 </head>
 <body class="light-mode">
 
-<nav>
-    <div><h1 id="clock">00:00</h1></div>
-    <div><h1 id="clockgreet">Goedemorgen!</h1></div>
-    <a href="index.php">Home</a>
-    <a href="aboutme.php">about Me</a>
-    <a href="info.php">Info</a>
-    <a href="projecten.php">Projecten</a>
-    <a href="contact.php">Contact</a>
-    <a href="#" id="darkMode"> <img id="darkModeImage" src="images/dark-mode.png" alt="#"></a>
+<?php include 'assets/navbar.html'?>
 
-    <script src="darkmode.js"></script>
-    <script src="clock.js"></script>
-</nav>
+<?php include 'assets/landing-page.html'?>
 
-<header>
-    <div class="landing-page">
-        <div>
-            <p>
-                Denis
-            </p>
-        </div>
-        <div>
-            <div class="rotate270">
-                <div class="glitch-container">
-                    <p class="glitch">
-                        <span aria-hidden="true">Student</span>
-                        Student
-                        <span aria-hidden="true">Student</span>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div>
-            <p>
-                Software Developer
-            </p>
-        </div>
-    </div>
-</header>
-
-<div class="cookie-popup" id="cookie-popup">
-    <div class="popup-content">
-        <h1>Cookies</h1>
-        <p>Accept Cookies?</p>
-        <button onclick="acceptCookies()">Accept</button>
-        <button onclick="declineCookies()">Decline</button>
-    </div>
-</div>
-
-<script>
-    function acceptCookies() {
-        document.getElementById("cookie-popup").style.display = "none";
-        console.log("Cookies accepted");
-    }
-
-    function declineCookies() {
-        document.getElementById("cookie-popup").style.display = "none";
-        console.log("Cookies declined");
-    }
-
-    // How to make a cup of tea:
-    //
-    // First take the kettle and plug it into a compatible socket.
-    //
-    // Open the lid on your kettle and fill it up 3/4 with water and close the lid and press the power on button.
-    //
-    // While the water heats prepare your cup by opening the packet of tea and
-    // putting it inside making sure that most of the string is outside the cup.
-    // Optional: Add a teaspoon of sugar inside the cup.
-    //
-    // After the water starts boiling press the power off button and carefully pour it about 3/4 inside the cup.
-    //
-    // After pouring the water in the cup carefully set the kettle aside for later use.
-    //
-    // Take your spoon and slowly stir the water in a circular motion for about 20 seconds.
-    //
-    // Drink your cup of tea and enjoy! (CAUTION: HOT)
-</script>
+<?php include 'assets/cookies.html'?>
 
 </body>
 </html>

@@ -7,29 +7,8 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class = "light-mode">
-<nav>
-    <div class="clockcontainer">
-        <div>
-            <h1 id="clock">
-                00:00
-            </h1>
-        </div>
-        <div>
-            <h1 id="clockgreet">
-                Goedemorgen!
-            </h1>
-        </div>
-    </div>
-    <a href="index.html">Home</a>
-    <a href="aboutme.html">about Me</a>
-    <a href="info.html">Info</a>
-    <a href="projecten.html">Projecten</a>
-    <a href="contact.html">Contact</a>
-    <a href="#" id="darkMode"> <img id="darkModeImage" src="images/dark-mode.png" alt="#"></a>
 
-    <script src="darkmode.js"></script>
-    <script src="clock.js"></script>
-</nav>
+<?php include 'assets/navbar.html'?>
 
 <section id="info" class="info">
     <div class="textcontainer">
