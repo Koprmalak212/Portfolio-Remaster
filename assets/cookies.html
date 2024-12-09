@@ -1,4 +1,4 @@
-<div class="cookie-popup" id="cookie-popup">
+<div class="cookie-popup" id="cookie-popup" style="display: none">
   <div class="popup-content">
     <h1>Cookies</h1>
     <p>Accept Cookies?</p>
@@ -8,15 +8,28 @@
 </div>
 
 <script>
+  // check session storage op load
+  window.onload = function() {
+    if (!sessionStorage.getItem("cookiePopupShown")) { // checkt of de cookie pop gezien is
+      document.getElementById("cookie-popup").style.display = "flex"; // laat hem zien als dat niet zo is
+    }
+  }
   function acceptCookies() {
     document.getElementById("cookie-popup").style.display = "none";
+    sessionStorage.setItem("cookiePopupShown", true); // voegt het toe aan de session storage dat het gezzien is
     console.log("Cookies accepted");
   }
 
   function declineCookies() {
     document.getElementById("cookie-popup").style.display = "none";
+    sessionStorage.setItem("cookiePopupShown", true); // voegt ook toe dat het gezien is
     console.log("Cookies declined");
   }
+
+  function clearSessionStorage() {
+    sessionStorage.clear();
+  }
+
 
   // How to make a cup of tea:
   //
