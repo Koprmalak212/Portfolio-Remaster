@@ -52,6 +52,8 @@ body {
     width: 100%;
     margin: 0;
     z-index: -1;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 
@@ -364,4 +366,35 @@ nav a img:hover {
     cursor: pointer;
     background: radial-gradient(circle, rgba(0,0,0,1) 30%, rgba(67,223,208,1) 75%);
 }
+
+@media screen and (max-width: 800px) {
+    #navbar{
+        display: none;
+    }
+}
+
+.counter{
+    position: absolute;
+    top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.counter h1{
+    font-family: "Comic Sans MS", cursive;
+    border: 5px solid black;
+    background: url("images/chrimasbackground.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    border-radius: 15px;
+    padding: 15px;
+    text-shadow: 2px 2px black;
+    font-weight: bold;
+}
+
 
